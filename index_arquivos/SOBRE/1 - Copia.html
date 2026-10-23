@@ -204,7 +204,25 @@ document.write('  '+todaysDate);
 <!--##############################################################################-->
 <!--##############################################################################-->
 <!---------------------------------------------------------------------------------->
-<div height="100" style="background-color: blue;line-height: 100px;text-align: center;"><p style="color: white"><FONT SIZE=+2>Contém conteúdo adulto, <FONT COLOR="red"><b>proibido para menores de 21 anos</b></FONT></FONT></p></div>
+<br/><center>
+<b id='piscando' style="transition-duration:0.5s">
+ATENÇÃO / AVISO
+<br/>
+Contém conteúdo adulto, <FONT COLOR="red"><b>proibido para menores de 21 anos</b></FONT>.
+</b><script>
+var teste = 0;
+ setInterval(piscar, 500);
+ function piscar(){
+if(teste<1){
+teste++;
+document.getElementById('piscando').style.opacity = '1';
+} else{
+teste = 0; 
+document.getElementById('piscando').style.opacity = '0';
+}};
+</script>
+
+<P><i>Contém conteúdo adulto, <FONT COLOR="red"><b>proibido para menores de 21 anos</b></FONT></i></p>
 
 <P><li>Crido em: <u><i><FONT COLOR="#aaaaaa">09:39 23/10/2026</FONT></i></u></li></P>
 <P><li>Obrigado por <a href="../../
@@ -233,7 +251,7 @@ img {
 
 
 
-
+</center>
 
 
 
